@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', { "title":"main" })
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="shortcut icon" href="#" />
+    <title>main</title>
+</head>
+
     <body>
-        @@include('html/header.html', { })
+        <header></header>
+
         <main>
             <div class="form-container">
                 <div class="input-container">
@@ -38,7 +47,8 @@
                 <button id="submit-button">Submit</button>
             </div>
         </main>
-        @@include('html/footer.html', { })
+        <footer></footer>
+
         <script src="js/app.min.js"></script>
     </body>
 </html>
