@@ -1,9 +1,13 @@
 import * as flsFunctions from "./modules/function.js";
-// import { modul1 } from "./modul1.js";
 
 flsFunctions.isWebp();
 
 if (window.location.href.includes("index.html")) {
+    localStorage.clear();
+    inputWeight();
+}
+
+function inputWeight() {
     const squatInput = document.getElementById("squat-input");
     const benchPressInput = document.getElementById("benchpress-input");
     const deadliftInput = document.getElementById("deadlift-input");
