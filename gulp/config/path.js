@@ -1,7 +1,5 @@
-
 import * as nodePath from "path";
 const rootFolder = nodePath.basename(nodePath.resolve());
-
 
 const buildFolder = `./dist`;
 const srcFolder = `./src`;
@@ -16,7 +14,7 @@ export const path = {
         files: `${buildFolder}/files/`,
     },
     src: {
-        js: `${srcFolder}/js/app.js`,
+        js: `${srcFolder}/js/*.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
         scss: `${srcFolder}/scss/style.scss`,
@@ -36,4 +34,4 @@ export const path = {
     srcFolder: srcFolder,
     rootFolder: rootFolder,
     ftp: `test`,
-}
+};
