@@ -13,38 +13,52 @@
         <header></header>
 
         <main>
-            <div class="form-container">
-                <div class="input-container">
-                    <label for="squat-input">Squat:</label>
-                    <input
-                        type="number"
-                        id="squat-input"
-                        min="50"
-                        max="400"
-                        required
-                    />
-                </div>
-                <div class="input-container">
-                    <label for="benchpress-input">Bench Press:</label>
-                    <input
-                        type="number"
-                        id="benchpress-input"
-                        min="50"
-                        max="400"
-                        required
-                    />
-                </div>
-                <div class="input-container">
-                    <label for="deadlift-input">Deadlift:</label>
-                    <input
-                        type="number"
-                        id="deadlift-input"
-                        min="50"
-                        max="400"
-                        required
-                    />
-                </div>
-                <button id="submit-button">Submit</button>
+            <div class="wrapper">
+                <form class="form-container" action="">
+                    <div class="input-container">
+                        <label for="squat-input">Squat:</label>
+                        <input
+                            type="number"
+                            id="squat-input"
+                            min="50"
+                            max="400"
+                            required
+                        />
+                    </div>
+                    <div class="input-container">
+                        <label for="benchpress-input">Bench Press:</label>
+                        <input
+                            type="number"
+                            id="benchpress-input"
+                            min="50"
+                            max="400"
+                            required
+                        />
+                    </div>
+                    <div class="input-container">
+                        <label for="deadlift-input">Deadlift:</label>
+                        <input
+                            type="number"
+                            id="deadlift-input"
+                            min="50"
+                            max="400"
+                            required
+                        />
+                    </div>
+                    <div class="position-button">
+                        <input
+                            class="button button__reset"
+                            type="reset"
+                            value="Reset"
+                        />
+                        <input
+                            class="button button__submit"
+                            type="submit"
+                            id="submit-button"
+                            value="Submit"
+                        />
+                    </div>
+                </form>
             </div>
         </main>
         <footer></footer>
