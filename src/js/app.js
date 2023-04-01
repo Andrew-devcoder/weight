@@ -22,29 +22,9 @@ function inputWeight() {
             console.log("Bench Press:", benchPress);
             console.log("Deadlift:", deadlift);
 
-            window.location.assign("modul1.html");
+            window.location.assign("modul1-one-day.html");
         });
 }
-
-// function calculateResult(maxWeight, maxWeightPercent) {
-//     let percent = maxWeightPercent / 100;
-//     let result = percent * maxWeight;
-//     let closestNumber;
-
-//     if (result % 5 === 0 || result % 2.5 === 0) {
-//         closestNumber = result;
-//     } else {
-//         let candidate1 = Math.ceil(result / 2.5) * 2.5;
-//         let candidate2 = Math.ceil(result / 5) * 5;
-
-//         closestNumber =
-//             Math.abs(candidate1 - result) <= Math.abs(candidate2 - result)
-//                 ? candidate1
-//                 : candidate2;
-//     }
-
-//     return closestNumber;
-// }
 
 function calculateResult(maxWeight, maxWeightPercent) {
     let percent = maxWeightPercent / 100;
@@ -111,7 +91,7 @@ function updateSquatWeights() {
     });
 }
 
-if (window.location.href.includes("modul1.html")) {
+if (window.location.href.includes("modul1-one-day.html")) {
     let squat = localStorage.getItem("squat");
     let benchPress = localStorage.getItem("benchPress");
     let deadlift = localStorage.getItem("deadlift");

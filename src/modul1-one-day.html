@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <link rel="shortcut icon" href="#" />
-    <title>modul1</title>
-</head>
-
+    @@include('html/head.html', { "title":"modul1" })
     <body>
-        <header></header>
-
+        @@include('html/header.html', { })
         <main>
             <div class="wrapper">
-                <table class="table">
+                <table id="" class="table">
                     <thead class="table__header">
                         <tr>
                             <th>exercise</th>
@@ -35,13 +26,13 @@
                             <td class="max-weight-percent">57</td>
                         </tr>
                         <tr class="change-weight">
-                            <td class="work-squat">///</td>
+                            <td class="work-squat">err</td>
                             <td>3</td>
                             <td>3</td>
                             <td class="max-weight-percent">65</td>
                         </tr>
                         <tr class="change-weight">
-                            <td class="work-squat">///</td>
+                            <td class="work-squat">err</td>
                             <td>2</td>
                             <td>3</td>
                             <td class="max-weight-percent">75</td>
@@ -50,19 +41,19 @@
                         <td class="name-exercise" rowspan="4">bench press</td>
 
                         <tr class="change-weight">
-                            <td class="work-press">///</td>
+                            <td class="work-press">err</td>
                             <td>3</td>
                             <td>1</td>
                             <td class="max-weight-percent">60</td>
                         </tr>
                         <tr class="change-weight">
-                            <td class="work-press">///</td>
+                            <td class="work-press">err</td>
                             <td>2</td>
                             <td>2</td>
                             <td class="max-weight-percent">70</td>
                         </tr>
                         <tr class="change-weight">
-                            <td class="work-press">///</td>
+                            <td class="work-press">err</td>
                             <td>1</td>
                             <td>2</td>
                             <td class="max-weight-percent">78</td>
@@ -71,13 +62,13 @@
                         <td class="name-exercise" rowspan="3">squat</td>
 
                         <tr class="change-weight">
-                            <td class="work-squat">///</td>
+                            <td class="work-squat">err</td>
                             <td>4</td>
                             <td>1</td>
                             <td class="max-weight-percent">60</td>
                         </tr>
                         <tr class="change-weight">
-                            <td class="work-squat">///</td>
+                            <td class="work-squat">err</td>
                             <td>4</td>
                             <td>4</td>
                             <td class="max-weight-percent">70</td>
@@ -88,7 +79,7 @@
                         </td>
 
                         <tr class="change-weight">
-                            <td class="work-press">///</td>
+                            <td class="work-press">err</td>
                             <td>5</td>
                             <td>5</td>
                             <td class="max-weight-percent">65</td>
@@ -97,7 +88,7 @@
                         <td class="name-exercise" rowspan="2">french press</td>
 
                         <tr class="change-weight">
-                            <td class="work-press">///</td>
+                            <td class="work-press">err</td>
                             <td>5</td>
                             <td>5</td>
                             <td class="max-weight-percent">45</td>
@@ -105,13 +96,14 @@
                     </tbody>
                 </table>
                 <div class="nav">
-                    <button class="button button__back">back</button>
-                    <button class="button button__next">next</button>
+                    <a class="button button__back" href="index.html">back</a>
+                    <a class="button button__next" href="modul1-two-day.html"
+                        >next</a
+                    >
                 </div>
             </div>
         </main>
-        <footer></footer>
-
+        @@include('html/footer.html', { })
         <script src="js/app.min.js"></script>
     </body>
 </html>
