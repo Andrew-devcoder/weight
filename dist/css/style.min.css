@@ -163,15 +163,24 @@ body {
   border-radius: 8px;
   box-shadow: inset -100px -100px 0 rgb(28, 30, 33);
   color: rgb(52, 56, 61);
+  border-collapse: collapse;
 }
 
 th {
-  padding: 10px;
+  padding: 15px;
+  width: 150px;
+  border: 1px solid rgb(52, 56, 61);
 }
 
 td {
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  border: 1px solid rgb(52, 56, 61);
+}
+
+.table__header {
+  height: 80px;
+  line-height: 1.2;
 }
 
 .max-weight-percent::after {
