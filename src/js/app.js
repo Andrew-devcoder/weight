@@ -60,11 +60,18 @@ function calculateResult(maxWeight, maxWeightPercent) {
     return closestNumber;
 }
 
-function updateSquatWeights() {
+function updateWeights() {
     const changeWeightElems = document.querySelectorAll(".change-weight");
     changeWeightElems.forEach((changeWeightElem) => {
         const workSquatElem = changeWeightElem.querySelector(".work-squat");
         const workPressElem = changeWeightElem.querySelector(".work-press");
+        const workDumbbellPressElem = changeWeightElem.querySelector(
+            ".work-dumbbell-press"
+        );
+        const workFrenchPressElem =
+            changeWeightElem.querySelector(".work-french-press");
+        const workDeadliftElem =
+            changeWeightElem.querySelector(".work-deadlift");
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
         );
@@ -85,24 +92,75 @@ function updateSquatWeights() {
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
+        } else if (workDumbbellPressElem) {
+            let benchPress = localStorage.getItem("benchPress");
+            let loadWeight = benchPress * 0.32;
+            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            const calculatedResult = calculateResult(
+                loadWeight,
+                maxWeightPercentValue
+            );
+            workDumbbellPressElem.textContent = calculatedResult;
+        } else if (workFrenchPressElem) {
+            let benchPress = localStorage.getItem("benchPress");
+            let loadWeight = benchPress * 0.46;
+            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            const calculatedResult = calculateResult(
+                loadWeight,
+                maxWeightPercentValue
+            );
+            workFrenchPressElem.textContent = calculatedResult;
+        } else if (workDeadliftElem) {
+            let benchPress = localStorage.getItem("benchPress");
+            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            const calculatedResult = calculateResult(
+                benchPress,
+                maxWeightPercentValue
+            );
+            workDeadliftElem.textContent = calculatedResult;
         } else {
-            console.log("error");
+            console.log("error1");
         }
     });
 }
 
-if (window.location.href.includes("modul1-one-day.html")) {
-    let squat = localStorage.getItem("squat");
-    let benchPress = localStorage.getItem("benchPress");
-    let deadlift = localStorage.getItem("deadlift");
+function locationChange() {
+    if (window.location.href.includes("modul1-one-day.html")) {
+        let squat = localStorage.getItem("squat");
+        let benchPress = localStorage.getItem("benchPress");
+        let deadlift = localStorage.getItem("deadlift");
 
-    console.log(squat);
-    console.log(benchPress);
-    console.log(deadlift);
+        console.log(squat);
+        console.log(benchPress);
+        console.log(deadlift);
 
-    updateSquatWeights();
-} else {
-    // for index.html
-    localStorage.clear();
-    inputWeight();
+        updateWeights();
+    } else if (window.location.href.includes("modul1-two-day.html")) {
+        let squat = localStorage.getItem("squat");
+        let benchPress = localStorage.getItem("benchPress");
+        let deadlift = localStorage.getItem("deadlift");
+
+        console.log(squat);
+        console.log(benchPress);
+        console.log(deadlift);
+
+        updateWeights();
+    } else if (window.location.href.includes("index.html")) {
+        // for index.html
+        localStorage.clear();
+        inputWeight();
+    } else {
+        console.log("error2");
+    }
 }
+
+locationChange();
+
+// function test() {
+//     let benchPress = localStorage.getItem("benchPress");
+
+//     let loadWeight = benchPress * 0.46;
+//     let result = Math.floor(loadWeight * 0.45);
+//     console.log(result);
+// }
+// test();
