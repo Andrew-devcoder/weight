@@ -91,13 +91,6 @@ h6 {
   font-weight: 400;
 }
 
-@font-face {
-  font-family: Anton;
-  font-display: swap;
-  src: url("../fonts/Anton-Regular.woff2") format("woff2"), url("../fonts/Anton-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 body {
   font-family: Anton;
   font-size: 16px;
@@ -105,9 +98,16 @@ body {
 }
 
 .wrapper {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
+@font-face {
+  font-family: Anton;
+  font-display: swap;
+  src: url("../fonts/Anton-Regular.woff2") format("woff2"), url("../fonts/Anton-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 .form-container {
   margin: 0 auto;
   padding: 20px;
@@ -133,31 +133,8 @@ body {
   color: #fff;
 }
 
-.position-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 5px 5px;
-}
-
-.button {
-  padding: 8px;
-  border-radius: 8px;
-  background: rgb(52, 56, 61);
-  color: rgb(28, 30, 33);
-}
-.button__reset:hover {
-  color: #fff;
-  background: red;
-}
-.button__submit:hover {
-  color: #fff;
-  background: green;
-}
-
 .table {
   margin: 0 auto;
-  max-width: max-content;
   padding: 20px;
   background: rgb(28, 30, 33);
   border-radius: 8px;
@@ -185,4 +162,54 @@ td {
 
 .max-weight-percent::after {
   content: "%";
+}
+
+.position-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 5px 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 300px;
+  padding: 50px;
+}
+
+.button {
+  padding: 8px;
+  border-radius: 8px;
+  background: rgb(52, 56, 61);
+  color: rgb(28, 30, 33);
+}
+.button__reset:hover {
+  color: #fff;
+  background: red;
+}
+.button__submit:hover {
+  color: #fff;
+  background: green;
+}
+.button__back {
+  padding: 8px 12px;
+  border: 2px solid rgb(28, 30, 33);
+  background: rgb(28, 30, 33);
+  color: rgb(52, 56, 61);
+}
+.button__back:hover {
+  background: rgb(52, 56, 61);
+  color: rgb(28, 30, 33);
+}
+.button__next {
+  padding: 8px 12px;
+  border: 2px solid rgb(28, 30, 33);
+  background: rgb(28, 30, 33);
+  color: rgb(52, 56, 61);
+}
+.button__next:hover {
+  background: rgb(52, 56, 61);
+  color: rgb(28, 30, 33);
 }

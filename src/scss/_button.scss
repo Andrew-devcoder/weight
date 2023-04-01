@@ -1,0 +1,59 @@
+.position-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 5px 5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    padding: 50px;
+}
+
+.button {
+    padding: 8px;
+    border-radius: 8px;
+    background: rgb(52, 56, 61);
+    color: rgb(28, 30, 33);
+
+    &__reset {
+        &:hover {
+            color: #fff;
+            background: red;
+        }
+    }
+
+    &__submit {
+        &:hover {
+            color: #fff;
+            background: green;
+        }
+    }
+
+    &__back {
+        padding: 8px 12px;
+        border: 2px solid rgb(28, 30, 33);
+        background: rgb(28, 30, 33);
+        color: rgb(52, 56, 61);
+
+        &:hover {
+            background: rgb(52, 56, 61);
+            color: rgb(28, 30, 33);
+        }
+    }
+
+    &__next {
+        padding: 8px 12px;
+        border: 2px solid rgb(28, 30, 33);
+        background: rgb(28, 30, 33);
+        color: rgb(52, 56, 61);
+
+        &:hover {
+            background: rgb(52, 56, 61);
+            color: rgb(28, 30, 33);
+        }
+    }
+}
