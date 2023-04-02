@@ -80,6 +80,10 @@ function updateWeights() {
         );
         const workMiddlePressElem =
             changeWeightElem.querySelector(".work-middle-press");
+        const workInclinePressElem = changeWeightElem.querySelector(
+            ".work-incline-press"
+        );
+        const workBicepsElem = changeWeightElem.querySelector(".work-biceps");
 
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
@@ -154,6 +158,24 @@ function updateWeights() {
                 maxWeightPercentValue
             );
             workMiddlePressElem.textContent = calculatedResult;
+        } else if (workInclinePressElem) {
+            let benchPress = localStorage.getItem("benchPress");
+            let loadWeight = benchPress * 0.8;
+            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            const calculatedResult = calculateResult(
+                loadWeight,
+                maxWeightPercentValue
+            );
+            workInclinePressElem.textContent = calculatedResult;
+        } else if (workBicepsElem) {
+            let benchPress = localStorage.getItem("benchPress");
+            let loadWeight = benchPress * 0.35;
+            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            const calculatedResult = calculateResult(
+                loadWeight,
+                maxWeightPercentValue
+            );
+            workBicepsElem.textContent = calculatedResult;
         } else {
             console.log("error1");
         }
@@ -172,6 +194,16 @@ function locationChange() {
 
         updateWeights();
     } else if (window.location.href.includes("modul1-two-day.html")) {
+        let squat = localStorage.getItem("squat");
+        let benchPress = localStorage.getItem("benchPress");
+        let deadlift = localStorage.getItem("deadlift");
+
+        console.log(squat);
+        console.log(benchPress);
+        console.log(deadlift);
+
+        updateWeights();
+    } else if (window.location.href.includes("modul1-three-day.html")) {
         let squat = localStorage.getItem("squat");
         let benchPress = localStorage.getItem("benchPress");
         let deadlift = localStorage.getItem("deadlift");
