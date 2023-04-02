@@ -177,58 +177,27 @@ function updateWeights() {
             );
             workBicepsElem.textContent = calculatedResult;
         } else {
-            console.log("error1");
+            console.log("error: updateWeights()");
         }
     });
 }
 
 function locationChange() {
-    if (window.location.href.includes("modul1-one-day.html")) {
-        let squat = localStorage.getItem("squat");
-        let benchPress = localStorage.getItem("benchPress");
-        let deadlift = localStorage.getItem("deadlift");
-
-        console.log(squat);
-        console.log(benchPress);
-        console.log(deadlift);
-
-        updateWeights();
-    } else if (window.location.href.includes("modul1-two-day.html")) {
-        let squat = localStorage.getItem("squat");
-        let benchPress = localStorage.getItem("benchPress");
-        let deadlift = localStorage.getItem("deadlift");
-
-        console.log(squat);
-        console.log(benchPress);
-        console.log(deadlift);
-
-        updateWeights();
-    } else if (window.location.href.includes("modul1-three-day.html")) {
-        let squat = localStorage.getItem("squat");
-        let benchPress = localStorage.getItem("benchPress");
-        let deadlift = localStorage.getItem("deadlift");
-
-        console.log(squat);
-        console.log(benchPress);
-        console.log(deadlift);
-
-        updateWeights();
-    } else if (window.location.href.includes("index.html")) {
-        // for index.html
-        localStorage.clear();
+    if (
+        window.location.href.includes("index.html" || "http://localhost:3000/")
+    ) {
+        // localStorage.clear();
         inputWeight();
     } else {
-        console.log("error2");
+        let squat = localStorage.getItem("squat");
+        let benchPress = localStorage.getItem("benchPress");
+        let deadlift = localStorage.getItem("deadlift");
+        console.log(squat);
+        console.log(benchPress);
+        console.log(deadlift);
+
+        updateWeights();
     }
 }
 
 locationChange();
-
-// function test() {
-//     let benchPress = localStorage.getItem("benchPress");
-
-//     let loadWeight = benchPress * 0.46;
-//     let result = Math.floor(loadWeight * 0.45);
-//     console.log(result);
-// }
-// test();
