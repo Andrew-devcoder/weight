@@ -1,4 +1,8 @@
-import { changeWeightElems } from "./globalVars.js";
+import {
+    changeWeightElems,
+    squatStorage,
+    benchPressStorage,
+} from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
 export function moduleOneFirstDay() {
@@ -14,35 +18,28 @@ export function moduleOneFirstDay() {
             ".max-weight-percent"
         );
 
+        const maxWeightPercentValue = maxWeightPercentElem.textContent;
         if (workSquatElem) {
-            let squat = localStorage.getItem("squat");
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
             const calculatedResult = calculateResult(
-                squat,
+                squatStorage,
                 maxWeightPercentValue
             );
             workSquatElem.textContent = calculatedResult;
         } else if (workPressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
             const calculatedResult = calculateResult(
-                benchPress,
+                benchPressStorage,
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
         } else if (workDumbbellPressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            let loadWeight = benchPress * 0.32;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = benchPressStorage * 0.32;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue
             );
             workDumbbellPressElem.textContent = calculatedResult;
         } else if (workFrenchPressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            let loadWeight = benchPress * 0.46;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = benchPressStorage * 0.46;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue

@@ -3,7 +3,7 @@ import { moduleOneFirstDay } from "./modules/moduleOneFirstDay.js";
 import { moduleOneSecondDay } from "./modules/moduleOneSecondDay.js";
 import { moduleOneThirdDay } from "./modules/moduleOneThirdDay.js";
 
-function locationChange() {
+window.addEventListener("DOMContentLoaded", () => {
     if (
         window.location.href.includes("index.html" || "http://localhost:3000/")
     ) {
@@ -18,6 +18,4 @@ function locationChange() {
     } else {
         console.log("error: locationChange");
     }
-}
-
-locationChange();
+});
