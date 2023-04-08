@@ -5,7 +5,13 @@ import {
 } from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
-export function moduleOneFirstDay() {
+function fnc(a, b) {
+    let loadWeight = squatStorage * b;
+    let loadWeightUp = loadWeight + parseFloat(a);
+    return loadWeightUp;
+}
+
+export function moduleOneFirstDay(i) {
     changeWeightElems.forEach((changeWeightElem) => {
         const workSquatElem = changeWeightElem.querySelector(".work-squat");
         const workPressElem = changeWeightElem.querySelector(".work-press");
@@ -20,10 +26,17 @@ export function moduleOneFirstDay() {
         const maxWeightPercentValue = maxWeightPercentElem.textContent;
 
         if (workSquatElem) {
+            let loadWeightUp = fnc(squatStorage, i);
+            // let loadWeight = squatStorage * i;
+            // console.log(loadWeight);
+            // console.log(squatStorage);
+            // let loadWeightUp = loadWeight + parseFloat(squatStorage);
+            // console.log(loadWeightUp);
             const calculatedResult = calculateResult(
-                squatStorage,
+                loadWeightUp,
                 maxWeightPercentValue
             );
+            console.log(calculatedResult);
             workSquatElem.textContent = calculatedResult;
         } else if (workPressElem) {
             const calculatedResult = calculateResult(

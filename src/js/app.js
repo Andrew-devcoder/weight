@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
         localStorage.clear();
         inputWeight();
     } else if (window.location.href.includes("module-one-first-day.html")) {
-        moduleOneFirstDay();
+        moduleOneFirstDay(0.02);
     } else if (window.location.href.includes("module-one-second-day.html")) {
         moduleOneSecondDay();
     } else if (window.location.href.includes("module-one-third-day.html")) {
