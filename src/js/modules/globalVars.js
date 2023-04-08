@@ -9,6 +9,7 @@ export const changeWeightElems = document.querySelectorAll(".change-weight");
 // local storage
 export const squatStorage = localStorage.getItem("squat");
 export const benchPressStorage = localStorage.getItem("benchPress");
+export const deadliftStorage = localStorage.getItem("deadlift");
 
 //
 // export const maxWeightPercentValue = maxWeightPercentElem.textContent;

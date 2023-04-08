@@ -1,4 +1,8 @@
-import { changeWeightElems } from "./globalVars.js";
+import {
+    changeWeightElems,
+    deadliftStorage,
+    benchPressStorage,
+} from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
 export function moduleOneSecondDay() {
@@ -17,45 +21,36 @@ export function moduleOneSecondDay() {
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
         );
+        const maxWeightPercentValue = maxWeightPercentElem.textContent;
 
         if (workDeadliftElem) {
-            let deadlift = localStorage.getItem("deadlift");
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
             const calculatedResult = calculateResult(
-                deadlift,
+                deadliftStorage,
                 maxWeightPercentValue
             );
             workDeadliftElem.textContent = calculatedResult;
         } else if (workPressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
             const calculatedResult = calculateResult(
-                benchPress,
+                benchPressStorage,
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
         } else if (workMorningDeadliftElem) {
-            let deadlift = localStorage.getItem("deadlift");
-            let loadWeight = deadlift * 0.55;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = deadliftStorage * 0.55;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue
             );
             workMorningDeadliftElem.textContent = calculatedResult;
         } else if (workMilitaryPressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            let loadWeight = benchPress * 0.6;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = benchPressStorage * 0.6;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue
             );
             workMilitaryPressElem.textContent = calculatedResult;
         } else if (workMiddlePressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            let loadWeight = benchPress * 0.85;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = benchPressStorage * 0.85;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue

@@ -17,8 +17,8 @@ export function moduleOneFirstDay() {
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
         );
-
         const maxWeightPercentValue = maxWeightPercentElem.textContent;
+
         if (workSquatElem) {
             const calculatedResult = calculateResult(
                 squatStorage,

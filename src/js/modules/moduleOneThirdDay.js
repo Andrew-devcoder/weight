@@ -1,4 +1,8 @@
-import { changeWeightElems } from "./globalVars.js";
+import {
+    changeWeightElems,
+    squatStorage,
+    benchPressStorage,
+} from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
 export function moduleOneThirdDay() {
@@ -12,36 +16,29 @@ export function moduleOneThirdDay() {
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
         );
+        const maxWeightPercentValue = maxWeightPercentElem.textContent;
 
         if (workSquatElem) {
-            let squat = localStorage.getItem("squat");
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
             const calculatedResult = calculateResult(
-                squat,
+                squatStorage,
                 maxWeightPercentValue
             );
             workSquatElem.textContent = calculatedResult;
         } else if (workPressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
             const calculatedResult = calculateResult(
-                benchPress,
+                benchPressStorage,
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
         } else if (workInclinePressElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            let loadWeight = benchPress * 0.8;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = benchPressStorage * 0.8;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue
             );
             workInclinePressElem.textContent = calculatedResult;
         } else if (workBicepsElem) {
-            let benchPress = localStorage.getItem("benchPress");
-            let loadWeight = benchPress * 0.35;
-            const maxWeightPercentValue = maxWeightPercentElem.textContent;
+            let loadWeight = benchPressStorage * 0.35;
             const calculatedResult = calculateResult(
                 loadWeight,
                 maxWeightPercentValue
