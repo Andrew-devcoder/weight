@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', { "title":"modul1" })
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="shortcut icon" href="#" />
+    <title>modul1</title>
+</head>
+
     <body>
-        @@include('html/header.html', { })
+        <header></header>
+
         <main>
             <div class="wrapper">
                 <table class="table">
@@ -124,16 +133,21 @@
                     </tbody>
                 </table>
                 <div class="nav">
-                    <a class="button button__back" href="modul1-one-day.html"
+                    <a
+                        class="button button__back"
+                        href="module-one-first-day.html"
                         >back</a
                     >
-                    <a class="button button__next" href="modul1-three-day.html"
+                    <a
+                        class="button button__next"
+                        href="module-one-third-day.html"
                         >next</a
                     >
                 </div>
             </div>
         </main>
-        @@include('html/footer.html', { })
+        <footer></footer>
+
         <script src="js/app.min.js"></script>
     </body>
 </html>
