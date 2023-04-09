@@ -1,39 +1,35 @@
 import {
     changeWeightElems,
-    deadliftStorage,
+    squatStorage,
     benchPressStorage,
     increaseByPercentage,
 } from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
-export function moduleOneSecondDay(loadPercentage) {
+export function moduleFirstDay(loadPercentage) {
     changeWeightElems.forEach((changeWeightElem) => {
-        const workDeadliftElem =
-            changeWeightElem.querySelector(".work-deadlift");
+        const workSquatElem = changeWeightElem.querySelector(".work-squat");
         const workPressElem = changeWeightElem.querySelector(".work-press");
-        const workMorningDeadliftElem = changeWeightElem.querySelector(
-            ".work-morning-deadlift"
+        const workDumbbellPressElem = changeWeightElem.querySelector(
+            ".work-dumbbell-press"
         );
-        const workMilitaryPressElem = changeWeightElem.querySelector(
-            ".work-military-press"
-        );
-        const workMiddlePressElem =
-            changeWeightElem.querySelector(".work-middle-press");
+        const workFrenchPressElem =
+            changeWeightElem.querySelector(".work-french-press");
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
         );
         const maxWeightPercentValue = maxWeightPercentElem.textContent;
 
-        if (workDeadliftElem) {
+        if (workSquatElem) {
             let loadWeightUp = increaseByPercentage(
-                deadliftStorage,
+                squatStorage,
                 loadPercentage
             );
             const calculatedResult = calculateResult(
                 loadWeightUp,
                 maxWeightPercentValue
             );
-            workDeadliftElem.textContent = calculatedResult;
+            workSquatElem.textContent = calculatedResult;
         } else if (workPressElem) {
             let loadWeightUp = increaseByPercentage(
                 benchPressStorage,
@@ -44,32 +40,24 @@ export function moduleOneSecondDay(loadPercentage) {
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
-        } else if (workMorningDeadliftElem) {
-            let loadWeight = deadliftStorage * 0.55;
+        } else if (workDumbbellPressElem) {
+            let loadWeight = benchPressStorage * 0.32;
             let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
             const calculatedResult = calculateResult(
                 loadWeightUp,
                 maxWeightPercentValue
             );
-            workMorningDeadliftElem.textContent = calculatedResult;
-        } else if (workMilitaryPressElem) {
-            let loadWeight = benchPressStorage * 0.6;
+            workDumbbellPressElem.textContent = calculatedResult;
+        } else if (workFrenchPressElem) {
+            let loadWeight = benchPressStorage * 0.46;
             let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
             const calculatedResult = calculateResult(
                 loadWeightUp,
                 maxWeightPercentValue
             );
-            workMilitaryPressElem.textContent = calculatedResult;
-        } else if (workMiddlePressElem) {
-            let loadWeight = benchPressStorage * 0.85;
-            let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
-            const calculatedResult = calculateResult(
-                loadWeightUp,
-                maxWeightPercentValue
-            );
-            workMiddlePressElem.textContent = calculatedResult;
+            workFrenchPressElem.textContent = calculatedResult;
         } else {
-            console.log("error moduleOneSecondtDay");
+            console.log("error muduleOneFirstDay");
         }
     });
 }

@@ -1,8 +1,8 @@
 import { inputWeight } from "./modules/input.js";
 import { isModulePage } from "./modules/globalVars.js";
-import { moduleOneFirstDay } from "./modules/moduleOneFirstDay.js";
-import { moduleOneSecondDay } from "./modules/moduleOneSecondDay.js";
-import { moduleOneThirdDay } from "./modules/moduleOneThirdDay.js";
+import { moduleFirstDay } from "./modules/moduleFirstDay.js";
+import { moduleSecondDay } from "./modules/moduleSecondDay.js";
+import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     if (
@@ -11,11 +11,17 @@ window.addEventListener("DOMContentLoaded", () => {
         localStorage.clear();
         inputWeight();
     } else if (window.location.href.includes("module-one-first-day.html")) {
-        moduleOneFirstDay(isModulePage());
+        moduleFirstDay(isModulePage());
     } else if (window.location.href.includes("module-one-second-day.html")) {
-        moduleOneSecondDay(isModulePage());
+        moduleSecondDay(isModulePage());
     } else if (window.location.href.includes("module-one-third-day.html")) {
-        moduleOneThirdDay(isModulePage());
+        moduleThirdDay(isModulePage());
+    } else if (window.location.href.includes("module-two-first-day.html")) {
+        moduleFirstDay(isModulePage());
+    } else if (window.location.href.includes("module-two-second-day.html")) {
+        moduleSecondDay(isModulePage());
+    } else if (window.location.href.includes("module-two-third-day.html")) {
+        moduleThirdDay(isModulePage());
     } else {
         console.log("error: locationChange");
     }

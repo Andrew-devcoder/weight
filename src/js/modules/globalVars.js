@@ -11,17 +11,14 @@ export const squatStorage = localStorage.getItem("squat");
 export const benchPressStorage = localStorage.getItem("benchPress");
 export const deadliftStorage = localStorage.getItem("deadlift");
 
-//
-// export const maxWeightPercentValue = maxWeightPercentElem.textContent;
-
-//
+// cal + %
 export function increaseByPercentage(localStorage, loadPercentage) {
     let loadWeight = localStorage * loadPercentage;
     let loadWeightUp = loadWeight + parseFloat(localStorage);
     return loadWeightUp;
 }
 
-//
+// ability to progress
 export function isModulePage() {
     const moduleOneRegex = /module-one/;
     if (moduleOneRegex.test(window.location.href)) {

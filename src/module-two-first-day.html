@@ -5,7 +5,7 @@
         @@include('html/header.html', { })
         <main>
             <div class="wrapper">
-                <table class="table">
+                <table id="" class="table">
                     <thead class="table__header">
                         <tr>
                             <th>exercise</th>
@@ -21,94 +21,92 @@
 
                         <tr class="change-weight">
                             <td class="work-squat">err</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td class="max-weight-percent">60</td>
+                        </tr>
+                        <tr class="change-weight">
+                            <td class="work-squat">err</td>
                             <td>3</td>
                             <td>1</td>
+                            <td class="max-weight-percent">70</td>
+                        </tr>
+                        <tr class="change-weight">
+                            <td class="work-squat">err</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td class="max-weight-percent">80</td>
+                        </tr>
+
+                        <td class="name-exercise" rowspan="4">bench press</td>
+
+                        <tr class="change-weight">
+                            <td class="work-press">err</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td class="max-weight-percent">55</td>
+                        </tr>
+                        <tr class="change-weight">
+                            <td class="work-press">err</td>
+                            <td>3</td>
+                            <td>3</td>
                             <td class="max-weight-percent">65</td>
                         </tr>
-
                         <tr class="change-weight">
-                            <td class="work-squat">err</td>
+                            <td class="work-press">err</td>
                             <td>2</td>
-                            <td>2</td>
+                            <td>3</td>
                             <td class="max-weight-percent">75</td>
                         </tr>
 
+                        <td class="name-exercise" rowspan="2">squat</td>
+
                         <tr class="change-weight">
                             <td class="work-squat">err</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td class="max-weight-percent">85</td>
-                        </tr>
-
-                        <td class="name-exercise" rowspan="3">bench press</td>
-
-                        <tr class="change-weight">
-                            <td class="work-press">err</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td class="max-weight-percent">60</td>
-                        </tr>
-
-                        <tr class="change-weight">
-                            <td class="work-press">err</td>
-                            <td>3</td>
                             <td>4</td>
-                            <td class="max-weight-percent">75</td>
+                            <td>4</td>
+                            <td class="max-weight-percent">66</td>
                         </tr>
-
-                        <td class="name-exercise" rowspan="2">
-                            squat</td>
-
-                            <tr class="change-weight">
-                                <td class="work-squat">err</td>
-                                <td>4</td>
-                                <td>4</td>
-                                <td class="max-weight-percent">60</td>
-                            </tr>
-                        </td>
 
                         <td class="name-exercise" rowspan="3">
-                            incline bench press
+                            dumbbell press
                         </td>
 
                         <tr class="change-weight">
-                            <td class="work-incline-press">err</td>
-                            <td>4</td>
+                            <td class="work-dumbbell-press">err</td>
+                            <td>5</td>
                             <td>1</td>
-                            <td class="max-weight-percent">60</td>
+                            <td class="max-weight-percent">55</td>
                         </tr>
-
                         <tr class="change-weight">
-                            <td class="work-incline-press">err</td>
-                            <td>4</td>
-                            <td>4</td>
+                            <td class="work-dumbbell-press">err</td>
+                            <td>5</td>
+                            <td>5</td>
                             <td class="max-weight-percent">70</td>
                         </tr>
 
-                        <td class="name-exercise" rowspan="3">
-                            standing biceps raise
-                        </td>
+                        <td class="name-exercise" rowspan="2">french press</td>
 
                         <tr class="change-weight">
-                            <td class="work-biceps">err</td>
+                            <td class="work-french-press">err</td>
                             <td>5</td>
-                            <td>1</td>
+                            <td>5</td>
                             <td class="max-weight-percent">50</td>
-                        </tr>
-
-                        <tr class="change-weight">
-                            <td class="work-biceps">err</td>
-                            <td>5</td>
-                            <td>5</td>
-                            <td class="max-weight-percent">60</td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="nav">
-                    <a class="button button__back" href="module-one-second-day.html"
+                    <a
+                        class="button button__back"
+                        href="module-one-third-day.html"
                         >back</a
                     >
-                    <a class="button button__next" href="module-two-first-day.html">next</a>
+                    <a
+                        class="button button__next"
+                        id="next"
+                        href="module-two-second-day.html"
+                        >next</a
+                    >
                 </div>
             </div>
         </main>

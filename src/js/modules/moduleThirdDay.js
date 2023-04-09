@@ -6,15 +6,14 @@ import {
 } from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
-export function moduleOneFirstDay(loadPercentage) {
+export function moduleThirdDay(loadPercentage) {
     changeWeightElems.forEach((changeWeightElem) => {
         const workSquatElem = changeWeightElem.querySelector(".work-squat");
         const workPressElem = changeWeightElem.querySelector(".work-press");
-        const workDumbbellPressElem = changeWeightElem.querySelector(
-            ".work-dumbbell-press"
+        const workInclinePressElem = changeWeightElem.querySelector(
+            ".work-incline-press"
         );
-        const workFrenchPressElem =
-            changeWeightElem.querySelector(".work-french-press");
+        const workBicepsElem = changeWeightElem.querySelector(".work-biceps");
         const maxWeightPercentElem = changeWeightElem.querySelector(
             ".max-weight-percent"
         );
@@ -40,24 +39,24 @@ export function moduleOneFirstDay(loadPercentage) {
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
-        } else if (workDumbbellPressElem) {
-            let loadWeight = benchPressStorage * 0.32;
+        } else if (workInclinePressElem) {
+            let loadWeight = benchPressStorage * 0.8;
             let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
             const calculatedResult = calculateResult(
                 loadWeightUp,
                 maxWeightPercentValue
             );
-            workDumbbellPressElem.textContent = calculatedResult;
-        } else if (workFrenchPressElem) {
-            let loadWeight = benchPressStorage * 0.46;
+            workInclinePressElem.textContent = calculatedResult;
+        } else if (workBicepsElem) {
+            let loadWeight = benchPressStorage * 0.35;
             let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
             const calculatedResult = calculateResult(
                 loadWeightUp,
                 maxWeightPercentValue
             );
-            workFrenchPressElem.textContent = calculatedResult;
+            workBicepsElem.textContent = calculatedResult;
         } else {
-            console.log("error muduleOneFirstDay");
+            console.log("error moduleOneThirdDay");
         }
     });
 }
