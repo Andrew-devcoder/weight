@@ -13,3 +13,10 @@ export const deadliftStorage = localStorage.getItem("deadlift");
 
 //
 // export const maxWeightPercentValue = maxWeightPercentElem.textContent;
+
+//
+export function increaseByPercentage(localStorage, loadPercentage) {
+    let loadWeight = localStorage * loadPercentage;
+    let loadWeightUp = loadWeight + parseFloat(localStorage);
+    return loadWeightUp;
+}

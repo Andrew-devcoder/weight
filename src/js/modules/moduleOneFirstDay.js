@@ -2,16 +2,11 @@ import {
     changeWeightElems,
     squatStorage,
     benchPressStorage,
+    increaseByPercentage,
 } from "./globalVars.js";
 import { calculateResult } from "./calculateResult.js";
 
-function fnc(a, b) {
-    let loadWeight = squatStorage * b;
-    let loadWeightUp = loadWeight + parseFloat(a);
-    return loadWeightUp;
-}
-
-export function moduleOneFirstDay(i) {
+export function moduleOneFirstDay(loadPercentage) {
     changeWeightElems.forEach((changeWeightElem) => {
         const workSquatElem = changeWeightElem.querySelector(".work-squat");
         const workPressElem = changeWeightElem.querySelector(".work-press");
@@ -26,17 +21,14 @@ export function moduleOneFirstDay(i) {
         const maxWeightPercentValue = maxWeightPercentElem.textContent;
 
         if (workSquatElem) {
-            let loadWeightUp = fnc(squatStorage, i);
-            // let loadWeight = squatStorage * i;
-            // console.log(loadWeight);
-            // console.log(squatStorage);
-            // let loadWeightUp = loadWeight + parseFloat(squatStorage);
-            // console.log(loadWeightUp);
+            let loadWeightUp = increaseByPercentage(
+                squatStorage,
+                loadPercentage
+            );
             const calculatedResult = calculateResult(
                 loadWeightUp,
                 maxWeightPercentValue
             );
-            console.log(calculatedResult);
             workSquatElem.textContent = calculatedResult;
         } else if (workPressElem) {
             const calculatedResult = calculateResult(
