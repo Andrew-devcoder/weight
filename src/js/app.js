@@ -22,6 +22,12 @@ window.addEventListener("DOMContentLoaded", () => {
         moduleSecondDay(isModulePage());
     } else if (window.location.href.includes("module-two-third-day.html")) {
         moduleThirdDay(isModulePage());
+    } else if (window.location.href.includes("module-three-first-day.html")) {
+        moduleFirstDay(isModulePage());
+    } else if (window.location.href.includes("module-three-second-day.html")) {
+        moduleSecondDay(isModulePage());
+    } else if (window.location.href.includes("module-three-third-day.html")) {
+        moduleThirdDay(isModulePage());
     } else {
         console.log("error: locationChange");
     }
