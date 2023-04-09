@@ -20,3 +20,18 @@ export function increaseByPercentage(localStorage, loadPercentage) {
     let loadWeightUp = loadWeight + parseFloat(localStorage);
     return loadWeightUp;
 }
+
+//
+export function isModulePage() {
+    const moduleOneRegex = /module-one/;
+    if (moduleOneRegex.test(window.location.href)) {
+        let loadPercentage = 0;
+        return loadPercentage;
+    }
+
+    const moduleTwoRegex = /module-two/;
+    if (moduleTwoRegex.test(window.location.href)) {
+        let loadPercentage = 0.02;
+        return loadPercentage;
+    }
+}

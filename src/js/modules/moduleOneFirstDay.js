@@ -31,22 +31,28 @@ export function moduleOneFirstDay(loadPercentage) {
             );
             workSquatElem.textContent = calculatedResult;
         } else if (workPressElem) {
-            const calculatedResult = calculateResult(
+            let loadWeightUp = increaseByPercentage(
                 benchPressStorage,
+                loadPercentage
+            );
+            const calculatedResult = calculateResult(
+                loadWeightUp,
                 maxWeightPercentValue
             );
             workPressElem.textContent = calculatedResult;
         } else if (workDumbbellPressElem) {
             let loadWeight = benchPressStorage * 0.32;
+            let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
             const calculatedResult = calculateResult(
-                loadWeight,
+                loadWeightUp,
                 maxWeightPercentValue
             );
             workDumbbellPressElem.textContent = calculatedResult;
         } else if (workFrenchPressElem) {
             let loadWeight = benchPressStorage * 0.46;
+            let loadWeightUp = increaseByPercentage(loadWeight, loadPercentage);
             const calculatedResult = calculateResult(
-                loadWeight,
+                loadWeightUp,
                 maxWeightPercentValue
             );
             workFrenchPressElem.textContent = calculatedResult;
