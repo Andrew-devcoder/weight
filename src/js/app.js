@@ -10,29 +10,11 @@ window.addEventListener("DOMContentLoaded", () => {
     ) {
         localStorage.clear();
         inputWeight();
-    } else if (window.location.href.includes("module-one-first-day.html")) {
+    } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
-    } else if (window.location.href.includes("module-one-second-day.html")) {
+    } else if (/second-day/.test(window.location.href)) {
         moduleSecondDay(isModulePage());
-    } else if (window.location.href.includes("module-one-third-day.html")) {
-        moduleThirdDay(isModulePage());
-    } else if (window.location.href.includes("module-two-first-day.html")) {
-        moduleFirstDay(isModulePage());
-    } else if (window.location.href.includes("module-two-second-day.html")) {
-        moduleSecondDay(isModulePage());
-    } else if (window.location.href.includes("module-two-third-day.html")) {
-        moduleThirdDay(isModulePage());
-    } else if (window.location.href.includes("module-three-first-day.html")) {
-        moduleFirstDay(isModulePage());
-    } else if (window.location.href.includes("module-three-second-day.html")) {
-        moduleSecondDay(isModulePage());
-    } else if (window.location.href.includes("module-three-third-day.html")) {
-        moduleThirdDay(isModulePage());
-    } else if (window.location.href.includes("module-four-first-day.html")) {
-        moduleFirstDay(isModulePage());
-    } else if (window.location.href.includes("module-four-second-day.html")) {
-        moduleSecondDay(isModulePage());
-    } else if (window.location.href.includes("module-four-third-day.html")) {
+    } else if (/third-day/.test(window.location.href)) {
         moduleThirdDay(isModulePage());
     } else {
         console.log("error: locationChange");
