@@ -31,4 +31,16 @@ export function isModulePage() {
         let loadPercentage = 0.02;
         return loadPercentage;
     }
+
+    const moduleThreeRegex = /module-three/;
+    if (moduleThreeRegex.test(window.location.href)) {
+        let loadPercentage = 0.04;
+        return loadPercentage;
+    }
+
+    const moduleFourRegex = /module-four/;
+    if (moduleFourRegex.test(window.location.href)) {
+        let loadPercentage = 0.06;
+        return loadPercentage;
+    }
 }

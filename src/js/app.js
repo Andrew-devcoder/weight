@@ -28,7 +28,15 @@ window.addEventListener("DOMContentLoaded", () => {
         moduleSecondDay(isModulePage());
     } else if (window.location.href.includes("module-three-third-day.html")) {
         moduleThirdDay(isModulePage());
+    } else if (window.location.href.includes("module-four-first-day.html")) {
+        moduleFirstDay(isModulePage());
+    } else if (window.location.href.includes("module-four-second-day.html")) {
+        moduleSecondDay(isModulePage());
+    } else if (window.location.href.includes("module-four-third-day.html")) {
+        moduleThirdDay(isModulePage());
     } else {
         console.log("error: locationChange");
     }
 });
+
+//dumbbell press need change 22.5 -> 22 example
