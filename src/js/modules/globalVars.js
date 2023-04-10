@@ -20,27 +20,15 @@ export function increaseByPercentage(localStorage, loadPercentage) {
 
 // ability to progress
 export function isModulePage() {
-    const moduleOneRegex = /module-one/;
-    if (moduleOneRegex.test(window.location.href)) {
-        let loadPercentage = 0;
-        return loadPercentage;
-    }
-
-    const moduleTwoRegex = /module-two/;
-    if (moduleTwoRegex.test(window.location.href)) {
-        let loadPercentage = 0.02;
-        return loadPercentage;
-    }
-
-    const moduleThreeRegex = /module-three/;
-    if (moduleThreeRegex.test(window.location.href)) {
-        let loadPercentage = 0.04;
-        return loadPercentage;
-    }
-
-    const moduleFourRegex = /module-four/;
-    if (moduleFourRegex.test(window.location.href)) {
-        let loadPercentage = 0.06;
-        return loadPercentage;
+    if (/module-one/.test(window.location.href)) {
+        return 0;
+    } else if (/module-two/.test(window.location.href)) {
+        return 0.02;
+    } else if (/module-three/.test(window.location.href)) {
+        return 0.04;
+    } else if (/module-four/.test(window.location.href)) {
+        return 0.06;
+    } else {
+        console.log("error: isModulePage");
     }
 }

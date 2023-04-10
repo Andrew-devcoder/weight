@@ -21,4 +21,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-//dumbbell press need change 22.5 -> 22 example
+//dumbbell press need change (example : 22.5 -> 22 )
