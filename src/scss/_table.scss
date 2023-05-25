@@ -12,16 +12,34 @@ th {
     padding: 15px;
     width: 150px;
     border: 1px solid rgb(52, 56, 61);
+
+    @media (max-width: 500px) {
+        padding: 5px;
+    }
 }
+
 td {
     padding: 10px;
     text-align: center;
     border: 1px solid rgb(52, 56, 61);
+
+    @media (max-width: 500px) {
+        padding: 5px;
+    }
 }
 
 .table__header {
     height: 80px;
     line-height: 1.2;
+
+    @media (max-width: 500px) {
+        font-size: 15px;
+    }
+}
+.name-exercise {
+    @media (max-width: 500px) {
+        font-size: 15px;
+    }
 }
 
 .max-weight-percent::after {

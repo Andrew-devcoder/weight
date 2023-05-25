@@ -100,6 +100,11 @@ body {
 .wrapper {
   padding-top: 70px;
 }
+@media (max-width: 500px) {
+  .wrapper {
+    padding-top: 40px;
+  }
+}
 
 @font-face {
   font-family: Anton;
@@ -148,16 +153,37 @@ th {
   width: 150px;
   border: 1px solid rgb(52, 56, 61);
 }
+@media (max-width: 500px) {
+  th {
+    padding: 5px;
+  }
+}
 
 td {
   padding: 10px;
   text-align: center;
   border: 1px solid rgb(52, 56, 61);
 }
+@media (max-width: 500px) {
+  td {
+    padding: 5px;
+  }
+}
 
 .table__header {
   height: 80px;
   line-height: 1.2;
+}
+@media (max-width: 500px) {
+  .table__header {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .name-exercise {
+    font-size: 15px;
+  }
 }
 
 .max-weight-percent::after {
