@@ -11,6 +11,10 @@
     justify-content: center;
     gap: 300px;
     padding: 50px;
+
+    @media (max-width: 500px) {
+        gap: 150px;
+    }
 }
 
 .button {
