@@ -18,13 +18,13 @@
 }
 
 .button {
-    padding: 8px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 84px;
     background: rgb(52, 56, 61);
     color: rgb(28, 30, 33);
+    cursor: pointer;
 
     &__header {
-        padding: 10px;
         background-color: gold;
         color: black;
     }
@@ -44,7 +44,6 @@
     }
 
     &__back {
-        padding: 8px 12px;
         border: 2px solid rgb(28, 30, 33);
         background: rgb(28, 30, 33);
         color: rgb(52, 56, 61);
@@ -56,7 +55,6 @@
     }
 
     &__next {
-        padding: 8px 12px;
         border: 2px solid rgb(28, 30, 33);
         background: rgb(28, 30, 33);
         color: rgb(52, 56, 61);
