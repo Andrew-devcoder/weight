@@ -94,7 +94,7 @@ h6 {
 body {
   font-family: Anton;
   font-size: 16px;
-  background: rgb(52, 56, 61);
+  background: #fcd9b8;
 }
 
 .wrapper {
@@ -109,7 +109,7 @@ body {
 .title {
   text-transform: uppercase;
   font-size: 18px;
-  color: white;
+  color: #17181d;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@ body {
   padding: 10px;
   text-transform: lowercase;
   font-size: 17px;
-  color: whitesmoke;
+  color: #292c35;
   text-align: center;
 }
 
@@ -175,9 +175,8 @@ body {
 .table {
   margin: 0 auto;
   padding: 20px;
-  background: rgb(28, 30, 33);
+  background: #e09145;
   border-radius: 8px;
-  box-shadow: inset -100px -100px 0 rgb(28, 30, 33);
   color: whitesmoke;
   border-collapse: collapse;
 }
@@ -185,7 +184,7 @@ body {
 th {
   padding: 15px;
   width: 150px;
-  border: 1px solid rgb(52, 56, 61);
+  border: 1px solid #fcd9b8;
 }
 @media (max-width: 500px) {
   th {
@@ -196,7 +195,7 @@ th {
 td {
   padding: 10px;
   text-align: center;
-  border: 1px solid rgb(52, 56, 61);
+  border: 1px solid #fcd9b8;
 }
 @media (max-width: 500px) {
   td {
@@ -247,13 +246,9 @@ td {
 .button {
   padding: 12px;
   border-radius: 84px;
-  background: rgb(52, 56, 61);
-  color: rgb(28, 30, 33);
+  background-color: #e09145;
+  color: #fcd9b8;
   cursor: pointer;
-}
-.button__header {
-  background-color: gold;
-  color: black;
 }
 .button__reset:hover {
   color: #fff;
@@ -263,21 +258,9 @@ td {
   color: #fff;
   background: green;
 }
-.button__back {
-  border: 2px solid rgb(28, 30, 33);
-  background: rgb(28, 30, 33);
-  color: rgb(52, 56, 61);
-}
 .button__back:hover {
-  background: rgb(52, 56, 61);
-  color: rgb(28, 30, 33);
-}
-.button__next {
-  border: 2px solid rgb(28, 30, 33);
-  background: rgb(28, 30, 33);
-  color: rgb(52, 56, 61);
+  color: whitesmoke;
 }
 .button__next:hover {
-  background: rgb(52, 56, 61);
-  color: rgb(28, 30, 33);
+  color: whitesmoke;
 }

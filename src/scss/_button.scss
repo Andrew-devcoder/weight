@@ -20,13 +20,13 @@
 .button {
     padding: 12px;
     border-radius: 84px;
-    background: rgb(52, 56, 61);
-    color: rgb(28, 30, 33);
+    background-color: #e09145;
+    color: #fcd9b8;
     cursor: pointer;
 
     &__header {
-        background-color: gold;
-        color: black;
+        // background-color: #e09145;
+        // color: #fcd9b8;
     }
 
     &__reset {
@@ -44,24 +44,16 @@
     }
 
     &__back {
-        border: 2px solid rgb(28, 30, 33);
-        background: rgb(28, 30, 33);
-        color: rgb(52, 56, 61);
-
         &:hover {
-            background: rgb(52, 56, 61);
-            color: rgb(28, 30, 33);
+            // background: rgb(52, 56, 61);
+            color: whitesmoke;
         }
     }
 
     &__next {
-        border: 2px solid rgb(28, 30, 33);
-        background: rgb(28, 30, 33);
-        color: rgb(52, 56, 61);
-
         &:hover {
-            background: rgb(52, 56, 61);
-            color: rgb(28, 30, 33);
+            // background: rgb(52, 56, 61);
+            color: whitesmoke;
         }
     }
 }

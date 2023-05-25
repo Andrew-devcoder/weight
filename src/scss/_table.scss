@@ -1,9 +1,9 @@
 .table {
     margin: 0 auto;
     padding: 20px;
-    background: rgb(28, 30, 33);
+    // background: rgb(28, 30, 33);
+    background: #e09145;
     border-radius: 8px;
-    box-shadow: inset -100px -100px 0 rgb(28, 30, 33);
     color: whitesmoke;
     border-collapse: collapse;
 }
@@ -11,7 +11,8 @@
 th {
     padding: 15px;
     width: 150px;
-    border: 1px solid rgb(52, 56, 61);
+    // border: 1px solid rgb(52, 56, 61);
+    border: 1px solid #fcd9b8;
 
     @media (max-width: 500px) {
         padding: 5px;
@@ -21,7 +22,8 @@ th {
 td {
     padding: 10px;
     text-align: center;
-    border: 1px solid rgb(52, 56, 61);
+    // border: 1px solid rgb(52, 56, 61);
+    border: 1px solid #fcd9b8;
 
     @media (max-width: 500px) {
         padding: 5px;
