@@ -149,9 +149,8 @@ body {
   max-width: 300px;
   width: 100%;
   border-radius: 8px;
-  background: rgb(28, 30, 33);
-  box-shadow: inset -100px -100px 0 rgb(28, 30, 33);
-  color: rgb(52, 56, 61);
+  background: #e09145;
+  color: #fcd9b8;
 }
 
 .input-container {
@@ -165,8 +164,8 @@ body {
   width: 100px;
   border-radius: 8px;
   padding: 4px 15px;
-  background: rgb(52, 56, 61);
-  color: #fff;
+  background: #292c35;
+  color: #fcd9b8;
   height: 30px;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -250,16 +249,38 @@ td {
   color: #fcd9b8;
   cursor: pointer;
 }
+.button__header {
+  transition: all 0.2s ease;
+}
+.button__header:hover {
+  color: #fff;
+}
+.button__reset {
+  border: 1px solid #fcd9b8;
+  transition: all 0.2s ease;
+}
 .button__reset:hover {
   color: #fff;
   background: red;
+  border: 1px solid red;
+}
+.button__submit {
+  border: 1px solid #fcd9b8;
+  transition: all 0.2s ease;
 }
 .button__submit:hover {
   color: #fff;
   background: green;
+  border: 1px solid green;
+}
+.button__back {
+  transition: all 0.2s ease;
 }
 .button__back:hover {
   color: whitesmoke;
+}
+.button__next {
+  transition: all 0.2s ease;
 }
 .button__next:hover {
   color: whitesmoke;
