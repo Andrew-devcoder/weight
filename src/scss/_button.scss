@@ -19,6 +19,12 @@
     background: rgb(52, 56, 61);
     color: rgb(28, 30, 33);
 
+    &__header {
+        padding: 10px;
+        background-color: gold;
+        color: black;
+    }
+
     &__reset {
         &:hover {
             color: #fff;

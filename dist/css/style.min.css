@@ -102,8 +102,16 @@ body {
 }
 @media (max-width: 500px) {
   .wrapper {
-    padding-top: 40px;
+    padding-top: 0;
   }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 @font-face {
@@ -210,6 +218,11 @@ td {
   border-radius: 8px;
   background: rgb(52, 56, 61);
   color: rgb(28, 30, 33);
+}
+.button__header {
+  padding: 10px;
+  background-color: gold;
+  color: black;
 }
 .button__reset:hover {
   color: #fff;
