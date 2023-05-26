@@ -39,6 +39,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: linear-gradient(70deg, #292c35, #17181d);
 }
 
 input,
@@ -94,7 +95,6 @@ h6 {
 body {
   font-family: "Montserrat";
   font-size: 16px;
-  background: #292c35;
   background: linear-gradient(70deg, #292c35, #17181d);
 }
 
