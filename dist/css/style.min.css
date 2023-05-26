@@ -92,7 +92,7 @@ h6 {
 }
 
 body {
-  font-family: Anton;
+  font-family: "Montserrat";
   font-size: 16px;
   background: #fcd9b8;
 }
@@ -243,7 +243,7 @@ td {
 }
 
 .button {
-  padding: 12px;
+  padding: 12px 14px;
   border-radius: 84px;
   background-color: #e09145;
   color: #fcd9b8;
