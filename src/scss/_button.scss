@@ -8,12 +8,13 @@
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 300px;
+    justify-content: space-between;
+    max-width: 500px;
     padding: 50px;
+    margin: 0 auto;
 
     @media (max-width: 500px) {
-        gap: 150px;
+        padding: 40px 20px;
     }
 }
 

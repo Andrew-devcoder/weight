@@ -184,7 +184,7 @@ body {
 th {
   padding: 15px;
   width: 150px;
-  border: 1px solid #fcd9b8;
+  border: 1px solid #292c35;
 }
 @media (max-width: 500px) {
   th {
@@ -195,7 +195,7 @@ th {
 td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #fcd9b8;
+  border: 1px solid #292c35;
 }
 @media (max-width: 500px) {
   td {
@@ -233,13 +233,14 @@ td {
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-between;
+  max-width: 500px;
   padding: 50px;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .nav {
-    gap: 150px;
+    padding: 40px 20px;
   }
 }
 
