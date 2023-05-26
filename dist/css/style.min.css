@@ -179,28 +179,42 @@ body {
   border-radius: 8px;
   color: whitesmoke;
   border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.table__body:last-child td {
+  border-bottom: 0px;
 }
 
 th {
   padding: 15px;
   width: 150px;
-  border: 1px solid #292c35;
+  border: 1px solid white;
 }
 @media (max-width: 500px) {
   th {
     padding: 5px;
   }
 }
+th:first-child {
+  border-left: 0px;
+}
+th:last-child {
+  border-right: 0px;
+}
 
 td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #292c35;
+  border: 1px solid white;
 }
 @media (max-width: 500px) {
   td {
     padding: 5px;
   }
+}
+td.max-weight-percent {
+  border-right: 0px;
 }
 
 .table__header {
@@ -212,7 +226,13 @@ td {
     font-size: 15px;
   }
 }
+.table__header th {
+  border-top: 0px;
+}
 
+.name-exercise {
+  border-left: 0px;
+}
 @media (max-width: 500px) {
   .name-exercise {
     font-size: 15px;
