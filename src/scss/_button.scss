@@ -22,17 +22,17 @@
     padding: 12px 16px;
     border-radius: 8px;
     background-color: #e09145;
+    border: 1px solid #e09145;
     color: #fcd9b8;
     cursor: pointer;
 
     &__header {
         color: #fff;
-        // background-color: #e09145;
-        // color: #fcd9b8;
         transition: all 0.2s ease;
 
         &:hover {
-            color: #fff;
+            background-color: #292c35;
+            color: #fcd9b8;
         }
     }
 
@@ -63,7 +63,8 @@
         transition: all 0.2s ease;
 
         &:hover {
-            color: whitesmoke;
+            background-color: #292c35;
+            color: #fcd9b8;
         }
     }
 
@@ -72,7 +73,8 @@
         transition: all 0.2s ease;
 
         &:hover {
-            color: whitesmoke;
+            background-color: #292c35;
+            color: #fcd9b8;
         }
     }
 }
