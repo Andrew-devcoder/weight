@@ -2,9 +2,17 @@
 <html lang="en">
     @@include('html/head.html', { "title":"modul1" })
     <body>
-        @@include('html/header.html', { })
         <main>
-            <div class="wrapper">
+             <div class="wrapper">
+                <div class="nav nav--center">
+                    <a
+                        class="button button__list-modules"
+                        href="list-modules.html"
+                    >
+                        module 1 <br />
+                        <span class="subtitle">first day</span>
+                    </a>
+                </div>
                 <div class="title">module 1</div>
                 <div class="subtitle">third day</div>
                 <table class="table">
@@ -110,6 +118,8 @@
                     <a class="button button__back" href="module-one-second-day.html"
                         >back</a
                     >
+        @@include('html/nav.html', { })
+
                     <a class="button button__next" href="module-two-first-day.html">next</a>
                 </div>
             </div>
