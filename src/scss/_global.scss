@@ -2,28 +2,27 @@ body {
     font-family: "Montserrat";
     font-size: 16px;
     background: #292c35;
-    background: linear-gradient(70deg, #292c35, #17181d);
+    background: linear-gradient(0deg, #292c35, #17181d);
 }
 
 .wrapper {
-    padding-top: 30px;
+    padding-top: 0;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    padding: 50px;
+    margin: 0 auto;
 
     @media (max-width: 500px) {
-        padding-top: 0;
+        padding: 40px;
     }
-}
 
-.title {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #fcd9b8;
-    text-align: center;
-}
-
-.subtitle {
-    padding: 10px;
-    text-transform: lowercase;
-    font-size: 17px;
-    color: #fcd9b8;
-    text-align: center;
+    &--center {
+        justify-content: center;
+        padding: 30px;
+    }
 }
