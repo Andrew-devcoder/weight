@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', { "title":"main" })
+    @@include('html/head.html', { "title":"records" })
     <body>
         <main>
-            <div class="wrapper">
-                <div class="form">
-                    <form
-                        class="form-container"
-                        action="module-one-first-day.html"
-                    >
-                        <div class="input-container">
-                            <label for="squat-input">Squat:</label>
-                            <input
-                                type="number"
-                                pattern="\d*"
-                                id="squat-input"
-                                min="50"
-                                max="400"
-                                required
-                            />
-                        </div>
-                        <div class="input-container">
-                            <label for="benchpress-input">Bench Press:</label>
-                            <input
-                                type="number"
-                                pattern="\d*"
-                                id="benchpress-input"
-                                min="50"
-                                max="400"
-                                required
-                            />
-                        </div>
-                        <div class="input-container">
-                            <label for="deadlift-input">Deadlift:</label>
-                            <input
-                                type="number"
-                                pattern="\d*"
-                                id="deadlift-input"
-                                min="50"
-                                max="400"
-                                required
-                            />
-                        </div>
-                        <div class="position-button">
-                            <input
-                                class="button button__reset"
-                                type="reset"
-                                value="Reset"
-                            />
-                            <button
-                                class="button button__submit"
-                                id="submit-button"
-                            >
-                                Submit
-                            </button>
-                        </div>
-                    </form>
+            <form class="form" action="module-one-first-day.html">
+                <div class="form__input">
+                    <label for="squat-input">Squat:</label>
+                    <input
+                        type="number"
+                        pattern="\d*"
+                        id="squat-input"
+                        min="50"
+                        max="400"
+                        required
+                    />
                 </div>
-            </div>
+                <div class="form__input">
+                    <label for="benchpress-input">Bench Press:</label>
+                    <input
+                        type="number"
+                        pattern="\d*"
+                        id="benchpress-input"
+                        min="50"
+                        max="400"
+                        required
+                    />
+                </div>
+                <div class="form__input">
+                    <label for="deadlift-input">Deadlift:</label>
+                    <input
+                        type="number"
+                        pattern="\d*"
+                        id="deadlift-input"
+                        min="50"
+                        max="400"
+                        required
+                    />
+                </div>
+                <div class="position-button">
+                    <input
+                        class="button button__reset"
+                        type="reset"
+                        value="Reset"
+                    />
+                    <button class="button button__submit" id="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
         </main>
-
         <script src="js/app.min.js"></script>
     </body>
 </html>

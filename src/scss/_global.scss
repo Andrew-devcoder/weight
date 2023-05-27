@@ -1,13 +1,14 @@
 body {
     font-family: "Montserrat";
     font-size: 16px;
-    background: #292c35;
+    // background: #292c35;
     background: linear-gradient(0deg, #292c35, #17181d);
 }
 
 .wrapper {
-    padding-top: 0;
+    padding: 5px;
 }
+
 .nav {
     display: flex;
     flex-direction: row;
