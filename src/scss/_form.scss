@@ -30,4 +30,11 @@
             letter-spacing: 0.5px;
         }
     }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 5px 5px;
+    }
 }
