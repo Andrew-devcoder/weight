@@ -159,6 +159,12 @@ body {
   font-size: 16px;
   letter-spacing: 0.5px;
 }
+.form__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 5px 5px;
+}
 
 .table {
   margin: 0 auto;
@@ -229,13 +235,6 @@ td.max-weight-percent {
 
 .max-weight-percent::after {
   content: "%";
-}
-
-.position-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 5px 5px;
 }
 
 .button {
