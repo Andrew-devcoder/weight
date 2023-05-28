@@ -5,10 +5,10 @@ import { moduleSecondDay } from "./modules/moduleSecondDay.js";
 import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-    localStorage.clear();
     if (
         window.location.href.includes("index.html" || "http://localhost:3000/")
     ) {
+        localStorage.clear();
         inputWeight();
     } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
