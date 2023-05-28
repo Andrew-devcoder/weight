@@ -7,7 +7,9 @@ import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 window.addEventListener("DOMContentLoaded", () => {
     if (
         window.location.href.includes(
-            "index.html" || "http://localhost:3000/" || "lifter"
+            "index.html" ||
+                "http://localhost:3000/" ||
+                "andrew-devcoder-lifter.netlify.app"
         )
     ) {
         localStorage.clear();
