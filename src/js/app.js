@@ -5,6 +5,7 @@ import { moduleSecondDay } from "./modules/moduleSecondDay.js";
 import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
+    localStorage.clear();
     if (
         window.location.href.includes(
             "index.html" ||
@@ -12,7 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 "andrew-devcoder-lifter.netlify.app"
         )
     ) {
-        // localStorage.clear();
         inputWeight();
     } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
