@@ -1,19 +1,17 @@
 import { squatInput, benchPressInput, deadliftInput } from "./globalVars.js";
 
 export function inputWeight() {
-    window.addEventListener("DOMContentLoaded", () => {
-        document
-            .getElementById("submit-button")
-            .addEventListener("click", function () {
-                const squat = squatInput.value;
-                const benchPress = benchPressInput.value;
-                const deadlift = deadliftInput.value;
+    document
+        .getElementById("submit-button")
+        .addEventListener("click", function () {
+            const squat = squatInput.value;
+            const benchPress = benchPressInput.value;
+            const deadlift = deadliftInput.value;
 
-                localStorage.setItem("squat", squat);
-                localStorage.setItem("benchPress", benchPress);
-                localStorage.setItem("deadlift", deadlift);
+            localStorage.setItem("squat", squat);
+            localStorage.setItem("benchPress", benchPress);
+            localStorage.setItem("deadlift", deadlift);
 
-                window.location.assign("module-one-first-day.html");
-            });
-    });
+            window.location.assign("module-one-first-day.html");
+        });
 }
