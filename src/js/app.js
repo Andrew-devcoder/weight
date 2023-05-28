@@ -6,19 +6,26 @@ import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     if (
+        window.location.href.endsWith("localhost:3000/") ||
         window.location.href.includes("index.html") ||
-        window.location.href.endsWith("localhost:3000") ||
         window.location.href.includes("lifter")
     ) {
-        // localStorage.clear();
+        localStorage.clear();
         inputWeight();
-    } else if (/first-day/.test(window.location.href)) {
+    } else if (window.location.href.includes("first-day")) {
         moduleFirstDay(isModulePage());
-    } else if (/second-day/.test(window.location.href)) {
+    } else if (window.location.href.includes("second-day")) {
         moduleSecondDay(isModulePage());
-    } else if (/third-day/.test(window.location.href)) {
+    } else if (window.location.href.includes("third-day")) {
         moduleThirdDay(isModulePage());
     } else {
+        // } else if (/first-day/.test(window.location.href)) {
+        //     moduleFirstDay(isModulePage());
+        // } else if (/second-day/.test(window.location.href)) {
+        //     moduleSecondDay(isModulePage());
+        // } else if (/third-day/.test(window.location.href)) {
+        //     moduleThirdDay(isModulePage());
+        // } else {
         console.log("error: locationChange");
     }
 });
