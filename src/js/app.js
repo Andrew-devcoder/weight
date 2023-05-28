@@ -6,14 +6,10 @@ import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     if (
-        window.location.href.includes("index.html" || "http://localhost:3000/")
+        window.location.href.includes("index.html" || window.location.href.includes("http://localhost:3000/")
     ) {
         localStorage.clear();
         inputWeight();
-        const submitButton = document.querySelector('button[type="submit"]');
-        submitButton.addEventListener("click", () => {
-            inputWeight();
-        });
     } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
     } else if (/second-day/.test(window.location.href)) {
