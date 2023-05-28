@@ -7,10 +7,10 @@ import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 window.addEventListener("DOMContentLoaded", () => {
     if (
         window.location.href.includes("index.html") ||
-        window.location.href.includes("localhost:3000") ||
+        window.location.href.endsWith("localhost:3000") ||
         window.location.href.includes("lifter")
     ) {
-        localStorage.clear();
+        // localStorage.clear();
         inputWeight();
     } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
