@@ -1,6 +1,12 @@
 import { squatInput, benchPressInput, deadliftInput } from "./globalVars.js";
 
 export function inputWeight() {
+    window.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector(".form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+        });
+    });
     document
         .getElementById("submit-button")
         .addEventListener("click", function () {
