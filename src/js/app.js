@@ -5,28 +5,22 @@ import { moduleSecondDay } from "./modules/moduleSecondDay.js";
 import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-    if (
-        window.location.href.endsWith("localhost:3000/") ||
-        window.location.href.includes("index.html") ||
-        window.location.href.endsWith("netlify.app")
-    ) {
+    // if (
+    //     window.location.href.endsWith("localhost:3000/") ||
+    //     window.location.href.includes("index.html") ||
+    //     window.location.href.endsWith("netlify.app")
+    // ) {
+    //     localStorage.clear();
+    //     inputWeight();
+    if (window.location.href.endsWith("localhost:3000/")) {
         localStorage.clear();
         inputWeight();
-        // } else if (window.location.href.includes("index.html")) {
-        //     localStorage.clear();
-        //     inputWeight();
-        // } else if (window.location.href.endsWith("netlify.app")) {
-        //     localStorage.clear();
-        //     inputWeight();
-        // if (window.location.href.endsWith("localhost:3000/")) {
-        //     localStorage.clear();
-        //     inputWeight();
-        // } else if (window.location.href.includes("index.html")) {
-        //     localStorage.clear();
-        //     inputWeight();
-        // } else if (window.location.href.endsWith("netlify.app")) {
-        //     localStorage.clear();
-        //     inputWeight();
+    } else if (window.location.href.includes("index.html")) {
+        localStorage.clear();
+        inputWeight();
+    } else if (window.location.href.endsWith("netlify.app")) {
+        localStorage.clear();
+        inputWeight();
     } else if (window.location.href.includes("first-day")) {
         moduleFirstDay(isModulePage());
     } else if (window.location.href.includes("second-day")) {
