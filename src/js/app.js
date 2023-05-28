@@ -21,15 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
     } else if (window.location.href.includes("third-day")) {
         moduleThirdDay(isModulePage());
     } else {
-        // } else if (/first-day/.test(window.location.href)) {
-        //     moduleFirstDay(isModulePage());
-        // } else if (/second-day/.test(window.location.href)) {
-        //     moduleSecondDay(isModulePage());
-        // } else if (/third-day/.test(window.location.href)) {
-        //     moduleThirdDay(isModulePage());
-        // } else {
         console.log("error: locationChange");
     }
 });
-
-//dumbbell press need change (example : 22.5 -> 22 )
