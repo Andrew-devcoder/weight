@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     } else if (window.location.href.includes("index.html")) {
         localStorage.clear();
         inputWeight();
-    } else if (window.location.href.endsWith("lifter.netlify.app")) {
+    } else if (window.location.href.endsWith("netlify.app")) {
         localStorage.clear();
         inputWeight();
     } else if (window.location.href.includes("first-day")) {
