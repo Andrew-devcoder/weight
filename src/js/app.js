@@ -5,13 +5,6 @@ import { moduleSecondDay } from "./modules/moduleSecondDay.js";
 import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-    // if (
-    //     window.location.href.endsWith("localhost:3000/") ||
-    //     window.location.href.includes("index.html") ||
-    //     window.location.href.endsWith("netlify.app")
-    // ) {
-    //     localStorage.clear();
-    //     inputWeight();
     if (window.location.href.endsWith("localhost:3000/")) {
         localStorage.clear();
         inputWeight();
