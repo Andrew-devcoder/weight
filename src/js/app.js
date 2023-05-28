@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (
         window.location.href.endsWith("localhost:3000/") ||
         window.location.href.includes("index.html") ||
-        window.location.href.includes("lifter")
+        window.location.href.endsWith("lifter.netlify.app")
     ) {
         localStorage.clear();
         inputWeight();
