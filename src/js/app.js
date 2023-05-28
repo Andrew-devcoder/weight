@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
         window.location.href.includes("http://localhost:3000/") ||
         window.location.href.includes("andrew-devcoder-lifter.netlify.app")
     ) {
-        localStorage.clear();
+        // localStorage.clear();
         inputWeight();
     } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
