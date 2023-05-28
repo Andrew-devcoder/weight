@@ -12,7 +12,6 @@ window.addEventListener("DOMContentLoaded", () => {
         localStorage.clear();
         inputWeight();
     } else if (window.location.href.endsWith("netlify.app/")) {
-        console.log("code work");
         localStorage.clear();
         inputWeight();
     } else if (window.location.href.includes("first-day")) {
