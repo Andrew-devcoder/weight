@@ -7,7 +7,7 @@ import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 window.addEventListener("DOMContentLoaded", () => {
     if (
         window.location.href.includes(
-            "index.html" ||
+            "index" ||
                 "http://localhost:3000/" ||
                 "andrew-devcoder-lifter.netlify.app"
         )
