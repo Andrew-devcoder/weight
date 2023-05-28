@@ -3,7 +3,7 @@ import { squatInput, benchPressInput, deadliftInput } from "./globalVars.js";
 export function inputWeight() {
     document
         .getElementById("submit-button")
-        .addEventListener("submit", function () {
+        .addEventListener("click", function () {
             const squat = squatInput.value;
             const benchPress = benchPressInput.value;
             const deadlift = deadliftInput.value;
