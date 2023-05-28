@@ -13,12 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
         )
     ) {
         localStorage.clear();
-        inputWeight();
-        const submitButton = document.querySelector('button[type="submit"]');
-        submitButton.addEventListener("click", () => {
-            inputWeight();
-        });
     } else if (/first-day/.test(window.location.href)) {
+        inputWeight();
         moduleFirstDay(isModulePage());
     } else if (/second-day/.test(window.location.href)) {
         moduleSecondDay(isModulePage());
