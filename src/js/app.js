@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (
         window.location.href.includes("index.html" || "http://localhost:3000/")
     ) {
-        // localStorage.clear();
+        localStorage.clear();
         inputWeight();
     } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
