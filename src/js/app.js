@@ -13,8 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
         )
     ) {
         localStorage.clear();
-    } else if (/first-day/.test(window.location.href)) {
         inputWeight();
+    } else if (/first-day/.test(window.location.href)) {
         moduleFirstDay(isModulePage());
     } else if (/second-day/.test(window.location.href)) {
         moduleSecondDay(isModulePage());
