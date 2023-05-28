@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
         window.location.href.includes("index.html" || "http://localhost:3000/")
     ) {
         localStorage.clear();
-        // inputWeight();
+        inputWeight();
         const submitButton = document.querySelector('button[type="submit"]');
         submitButton.addEventListener("click", () => {
             inputWeight();
