@@ -6,11 +6,9 @@ import { moduleThirdDay } from "./modules/moduleThirdDay.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     if (
-        window.location.href.includes(
-            "index" ||
-                "http://localhost:3000/" ||
-                "andrew-devcoder-lifter.netlify.app"
-        )
+        window.location.href.includes("index.html") ||
+        window.location.href.includes("http://localhost:3000/") ||
+        window.location.href.includes("andrew-devcoder-lifter.netlify.app")
     ) {
         localStorage.clear();
         inputWeight();
