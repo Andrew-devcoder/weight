@@ -20,12 +20,40 @@
     }
 }
 .module {
-    font-size: 20px;
-    text-transform: uppercase;
     padding: 0 0 10px;
+
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        margin: 2px;
+        padding: 5px 5px 0;
+        border-top: 2px solid white;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        margin: 2px;
+        padding: 5px 5px 0;
+        border-top: 2px solid white;
+    }
 }
 .day {
+    text-transform: capitalize;
     & li {
         padding: 10px 0;
+
+        & a {
+            color: #fcd9b8;
+
+            &:visited {
+                // color: white;
+            }
+        }
     }
 }
