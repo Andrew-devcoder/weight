@@ -19,13 +19,15 @@ body {
     margin: 0 auto;
 
     @media (max-width: 500px) {
-        padding: 40px 20px;
+        padding: 0;
+        justify-content: space-around;
     }
 
     &--center {
         justify-content: center;
-        padding: 30px;
     }
+
+
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
