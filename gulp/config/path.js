@@ -10,7 +10,6 @@ export const path = {
         css: `${buildFolder}/css/`,
         html: `${buildFolder}/`,
         images: `${buildFolder}/img/`,
-        fonts: `${buildFolder}/fonts/`,
         files: `${buildFolder}/files/`,
     },
     src: {
@@ -19,7 +18,6 @@ export const path = {
         svg: `${srcFolder}/img/**/*.svg`,
         scss: `${srcFolder}/scss/style.scss`,
         html: `${srcFolder}/*.html`,
-        files: `${srcFolder}/files/**/*.*`,
         svgincons: `${srcFolder}/svgincons/*.svg`,
     },
     watch: {
@@ -33,5 +31,4 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: `test`,
 };
