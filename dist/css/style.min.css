@@ -114,7 +114,7 @@ body {
 }
 @media (max-width: 500px) {
   .nav {
-    padding: 0;
+    padding: 40px 0;
     justify-content: space-around;
   }
 }
